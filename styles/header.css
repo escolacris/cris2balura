@@ -13,22 +13,19 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    }
+}
 
 .container {
     display: flex;
     align-items: center;
-    }
-
+}
 .container__imagem {
-   padding: 1em;
+    padding: 1em;
 }
-.lista-menu{
-   display: none;
-   position: absolute;
-   top: 100%;
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
 }
-.container_botao: :checked~.lista-menu{
+.container__botao:checked ~ .lista-menu {
     display: block;
-}
-
