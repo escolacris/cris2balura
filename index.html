@@ -61,8 +61,11 @@
 <!-- Slider main container -->
 <div class="swiper">
   <!-- Addition<div class="swiper-wrapper">
-    <!-- Slides -->
+  <!--If we need pagination-->
+  <div class="swiper-pagination"></div>
+
     <div class="swiper-slide">
+      <!--Slides-->
       <img
         src="img/ApacheKafka.png"
         alt="Livro sobre apache kafka e spring boot da alura books"
@@ -104,8 +107,12 @@
   const swiper = new Swiper(".swiper", {
     spaceBetween: 10,
     slidesPerView: 3,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+    },
   });
-  
+
 </script>
 </body>
 
